@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+:root {
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --grange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --very-Dark-Blue: hsl(234, 12%, 34%);
+    --grayish-Blue: hsl(229, 6%, 66%);
+    --very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--very-Light-Gray);
+}
+
+.title {
+    width: 35%;
+    text-align: center;
+    color: var(--very-Dark-Blue);
+}
+.title h2 {
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+.title h2.strong {
+    font-weight: 600;
+}
+
+.subtitle {
+    font-weight: 200;
+    margin: 1.2rem 0;
+    width: 500px;
+}
+
+.boxcontainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box1, .box2, .box3, .box4 {
+    background-color: #fff; 
+    border-radius: 5px;
+    padding: 2rem;
+    width: 350px;
+    box-shadow: 5px 0px 20px var(--grayish-Blue);
+    box-shadow: 0px 5px 20px var(--grayish-Blue);
+}
+
+
+.boxTitle {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--very-Dark-Blue);
+    margin-bottom: 1rem;
+}
+.boxDescription {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    color: var(--grayish-Blue);
+}
+
+.image {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 30px 30px 10px 0px;
+}
+
+.box1 {
+    border-top: 4px solid var(--cyan);
+    margin: 0 1rem;
+}
+.box2 {
+    border-top: 4px solid var(--red);
+    margin: 2rem 1rem;
+}
+.box3 {
+    border-top: 4px solid var(--grange);
+    margin: 2rem 1rem;
+}
+.box4 {
+    border-top: 4px solid var(--blue);
+    margin: 0 1rem;
+}
+
+@media all and (max-width: 375px) {
+
+    .boxcontainer {
+        flex-direction: column;
+    }
+
+    body {
+       height: auto;
+    }
+    .title {
+        width: 100%;
+        padding: 2rem 2rem;
+        margin-top: 3rem;
+    }
+    .subtitle {
+        width: 100%;
+        margin-top: 2rem;
+    }
+    .title h2 {
+        font-size: 1.5rem;
+    }
+}
